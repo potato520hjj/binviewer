@@ -3,6 +3,7 @@
 #include <ctype.h>
 #define COL 8		//一行显示十六进制的个数
 
+//打印ASCII字符
 void print_s(char *a, int col){
 	if(col == COL){
 		printf("%c%c%c%c%c%c%c%c\n",
@@ -24,6 +25,7 @@ void print_s(char *a, int col){
 		printf("\n");
 	}
 }
+//打印十六进制数
 void print_x(char *a, int col){
 	if(col == COL){
 		printf("%02X %02X %02X %02X %02X %02X %02X %02X  |  ",
@@ -45,6 +47,7 @@ void print_x(char *a, int col){
 		printf(" |  ");
 	}
 }
+
 int main(int argc, char *argv[]){
 	//初始
 	char *path = "tmp.txt";
